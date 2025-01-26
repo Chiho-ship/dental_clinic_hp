@@ -1,0 +1,272 @@
+@charset "UTF-8";
+
+/*共通部分*/
+html {
+   font-size: 100%; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* background-color: #f836bb; */
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+  }
+
+h5 {
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1.5rem;
+    position: relative;
+    top: 50px;
+}
+
+.section-title::before {
+    background-color: #50D5E0; /*下線の色*/
+    bottom: -20px; /* 線の位置 */
+    content: "";
+    height: 3px; /* 線の高さ */
+    left: 50%; /* 線の中央寄せ */
+    position: absolute;
+    transform: translateX(-50%); /* 線の中央寄せ */
+    width: 60px; /* 線の長さ */
+}
+
+/*ヘッダー部分*/
+.main-nav {
+    list-style: none;
+}
+
+.main-nav a {
+    color: black;
+    text-decoration: none;
+    margin: 8px 10px;
+}
+
+.main-nav a:hover {
+    color: #f836bb;
+}
+
+nav .button {
+    display: inline-block;
+    background: #EDB0BF;
+    color: #fff;
+    border-radius: 2px;
+    padding: 8px 16px;
+    text-align: center;
+    vertical-align: middle;
+}
+.button:hover {
+    background: #f78fd6;
+}
+
+/*メイン写真部分*/
+#main-content {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.main-image {
+    width: 100%;
+    height: 100%; /* 高さは自動調整 */
+    object-fit: cover; /* 画像が画面いっぱいに広がるように */
+    z-index: 1; /* 画像を背面に配置する */
+    
+}
+
+.copy-title {
+    display: inline;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+
+    font-size: 40px;
+    background-color: #fff;
+    padding: .3em 0.5em;
+    line-height: 1.8;
+    
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    z-index: 2;
+
+
+}
+
+/*当院の特徴*/
+.features {
+    display: flex;
+    margin-top: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.features-photo {
+    width: auto;
+    height: auto;
+}
+
+.feature-item {
+    margin: 40px 20px;
+}
+
+.feature-item p {
+    text-align: center;
+}
+
+/*治療のポリシー*/
+#policy {
+    height: 540px;
+    align-items: center;
+    background-color: #E9F9FA;
+}
+
+.content {
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+}
+
+.policy-image {
+    width: 391px;
+    height: 307px;
+    margin-right: 30px;
+}
+
+.section-subtitle {
+    margin-bottom: 15px;
+}
+
+.policy-context {
+    text-align: left;
+}
+
+/*お知らせ*/
+#info {
+    height: 600px;
+}
+.news {
+    margin: 100px 90px 50px 90px;
+}
+.news_list time {
+    background-color: #50D5E0;
+    color: #fff;
+    margin-right: 10px;
+    font-size: 1.1em;
+    padding: 0 5px;
+}
+.news_list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 30px;
+    border-bottom: 1px solid #DCDCDC;
+    padding-bottom: 40px;
+}
+.news_text {
+    flex: 1;
+    margin-left: 50px;
+}
+
+.news_item {
+    font-weight: bold;
+    font-size: 1.3em;
+    margin: 0;
+}
+.news_content {
+    margin: 0;
+
+}
+
+.news-all {
+    text-align: right;
+    margin-top: 40px;
+}
+
+/* フッターロゴ */
+.footer-logo {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 10px;
+}
+
+.footer-nav li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.footer-nav a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-nav a:hover {
+    color: #f836bb;
+}
+
+.sns-icon li {
+    text-decoration: none;
+    margin: 0 15px;
+}
+.sns-icon ul {
+    display: flex;
+    list-style-type: none; /* ドットを消す */
+}
+
+/* フッター */
+.footer-copywrite {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    background-color: #E9F9FA;
+    height: 47px;
+    justify-content: center;
+    letter-spacing: 2px;
+}
+
+
+/* スマホサイズの場合のメディアクエリ */
+@media (max-width: 600px) {
+    .pc-only {
+        display: none;
+    }
+
+    #main-content {
+        width: 100%;
+    }
+
+    
+}
