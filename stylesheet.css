@@ -88,7 +88,6 @@ nav .button {
     height: 100%; /* 高さは自動調整 */
     object-fit: cover; /* 画像が画面いっぱいに広がるように */
     z-index: 1; /* 画像を背面に配置する */
-    
 }
 
 .copy-title {
@@ -105,8 +104,6 @@ nav .button {
     top: 30%;
     left: 10%;
     z-index: 2;
-
-
 }
 
 /*当院の特徴*/
@@ -130,32 +127,44 @@ nav .button {
     text-align: center;
 }
 
-/*治療のポリシー*/
+/* ##############使い回し##############*/
 #policy {
     height: 540px;
     align-items: center;
-    background-color: #E9F9FA;
 }
 
 .content {
-    margin-top: 110px;
     display: flex;
     justify-content: center;
+    width: 80%;
+    margin: 130px auto;
+}
+
+.content.reverse {
+    flex-direction: row-reverse;
 }
 
 .policy-image {
     width: 391px;
     height: 307px;
-    margin-right: 30px;
+    margin: 0 30px;
 }
 
 .section-subtitle {
     margin-bottom: 15px;
+    font-size: 29px;
 }
 
 .policy-context {
-    text-align: left;
+    margin: 0 30px;
 }
+/* ##############ここまで############## */
+
+
+.bg-blue {
+    background-color: #E9F9FA;
+}
+
 
 /*お知らせ*/
 #info {
@@ -255,18 +264,553 @@ nav .button {
     height: 47px;
     justify-content: center;
     letter-spacing: 2px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sp-only {
+    display: none;
+}
+
+/* ************************2ページ目************************ */
+
+/* subpageタイトル */
+#info-main-visual {
+    position: relative;
+    max-width: 1200px;
+    height: 350px;
+}
+
+.info-main-img {
+    width: 100%;
+    height: 100%; /* 高さは自動調整 */
+    object-fit: cover; /* 画像が画面いっぱいに広がるように */
+    z-index: 1; /* 画像を背面に配置する */
+}
+
+.info-title {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    top: 50%;
+    left: 50%;  /* 横方向の中央揃え */
+    transform: translate(-50%, -50%);  /* 横と縦の両方で中央揃え */
+}
+
+/*ここから同じクラス名*/
+.subpage-title {
+    background-color: #fff;
+    padding: 5px 15px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.subpage-subtitle {
+    background-color: #50D5E0;
+    padding: 3px 15px;
+    margin-top: 0;
+    text-align: center;
+    color: #fff;
+}
+
+/* パンくずリスト */
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+}
+.breadcrumbs p {
+    margin: 40px 5px;
+}
+.breadcrumbs a {
+    text-decoration: none;
+
+}
+
+/* ************************3ページ目************************ */
+
+#policy-access {
+    height: 540px;
+    align-items: center;
+}
+
+.access-img {
+    width: 414px;
+    height: 305px;
+    /* margin: 0 30px; */
+}
+
+.access-context {
+    margin: 0 30px;
+}
+
+.adress, .phone {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#map {
+    max-width: 1117px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+
+#open-hours {
+    align-items: center;
+}
+
+/*テーブル*/
+.consul-hours-table-pc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.pc-table {
+    margin-top: 50px;
+    border-collapse: collapse;
+    width: 1114.5px;
+    height: 207.2px;
+}
+
+tr {
+    height: 73.2px;
+}
+
+.table-colomun, th {
+    background-color: #E9F9FA;
+    font-size: 18px;
+}
+
+td {
+    background-color: #F5FDFE;
+    font-size: 24px;
+    color: #6DB1B7;
+}
+
+td, th {
+    padding: 3px;
+    text-align: center;
+    border: solid 2px #E9F9FA;
+    border-collapse: collapse;
+}
+
+.table-colomun {
+    width: 279px;
+    color: #000;
+    font-size: 18px;
+}
+
+.consul-hours-table-sp {
+    display: none;
 }
 
 
-/* スマホサイズの場合のメディアクエリ */
+/* ボタンスタイル */
+.btn a {
+    position: relative;
+    display: block;
+    width: 280px;
+    padding: 15px 0;
+    background-color: #B4E7EB;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px;
+}
+
+/* ボタン内の三角アイコン */
+.btn-info-contents a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-right: 0 solid transparent;
+    border-left: 9px solid #50D5E0;
+    border-bottom: 6px solid transparent;
+    box-sizing: border-box;
+  }
+
+  .info-moin-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+
+  /* ************************4ページ目************************ */
+
+/* subpageタイトル */
+#web-reserve {
+    position: relative;
+    max-width: 1200px;
+    height: 350px;
+}
+
+.web-reserve-img {
+    width: 100%;
+    height: 100%; /* 高さは自動調整 */
+    object-fit: cover; /* 画像が画面いっぱいに広がるように */
+    z-index: 1; /* 画像を背面に配置する */
+}
+
+
+
+
+
+/*********************** スマホサイズの場合のメディアクエリ********************** */
 @media (max-width: 600px) {
     .pc-only {
         display: none;
     }
 
+    #main-content, #feature, #policy, #info, #footer {
+        width: 100%;
+    }
+    /* メニューアイコンのスタイル */
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px; /* 横幅 */
+        height: 25px; /* 縦幅 */
+        cursor: pointer;
+    }
+    
+    /* バーのスタイル */
+    .bar {
+        height: 5px; /* バーの高さ */
+        background-color: #000000; /* バーの色 */
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+    
+    /* バー間のスペースを調整 */
+    .bar:nth-child(1) {
+        margin-bottom: 5px;
+    }
+    
+    .bar:nth-child(2) {
+        margin-bottom: 5px;
+    }
+    
+    .bar:nth-child(3) {
+        margin-bottom: 0;
+    }
+
     #main-content {
+        height: 600px;
+    }
+
+    /* メインコピーの縦書き */
+    .main-copy {
+        font-size: 24px;
+        writing-mode: vertical-rl;
+    }
+
+    /* メイン写真 */
+    #main-content {
+        position: relative;
+    }
+
+    .main-image {
+        position: absolute;
+        /* top: 50%; */
+        right: 30%;
+
+    }
+
+    /* 当院の特徴 */
+    .features {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 80px;
+    }
+    
+    .features-photo {
+        width: 100%;
+        height: 100%;
+        max-width: 397px;
+        height: auto;
+    }
+    
+    .feature-item {
+        margin: 40px 20px;
+        text-align: center;
+    }
+    
+    .feature-item p {
+        text-align: center;
+    }
+
+    /* 治療のポリシー */
+    #policy {
+        align-items: center;
+        height: 800px;
+    }
+    
+    .content {
+        margin-top: 110px;
+        display: block;
+        justify-content: center;
+        /* flex-direction: column; */
+        align-items: center;
+    }
+
+    .policy-image {
+        width: 100%;
+        height: 100%;
+        max-width: 354px;
+        height: auto;
+        margin: 20px 0;
+    }
+    
+    .section-subtitle {
+        margin-bottom: 15px;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .policy-description p {
+        width: 400px; /* 幅を指定 */
+    }
+
+    .content.reverse {
+        flex-direction: column;
+    }
+
+    /*お知らせ*/
+    #info {
+        height: 700px;
+    }
+    .news {
+        margin: 0;
+        margin-top: 100px;
+    }
+    .news_list time {
+        background-color: #50D5E0;
+        color: #fff;
+        margin-right: 10px;
+        font-size: 1.1em;
+        padding: 0 5px;
+    }
+
+    .news_list {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .news_text {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .news_item {
+        font-size: 18px;
+    }
+
+    .news_content {
+        font-size: 14px;
+    }
+
+    .news-all {
+        text-align: right;
+        margin-top: 40px;
+    }
+
+    #policy-access {
+        height: 700px;
+        align-items: center;
+    }
+
+    .access-img {
+        width: 423px;
+        height: 244px;        
+    }
+
+
+
+    /*テーブルsp版*/
+    .sp-table {
+        /* display: block; tableとして表示する */
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .consul-hours-table-pc {
+        display: none;
+    }
+
+    .consul-hours-table-sp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    .sp-table {
+        margin-top: 50px;
+        border-collapse: collapse;
+        width: 399px;
+        height: 619px;
+     }
+
+    tr {
+        height: 73.2px;
+    }
+
+    .table-colomun, th {
+        background-color: #E9F9FA;
+        font-size: 18px;
+    }
+
+    td {
+        background-color: #F5FDFE;
+        font-size: 24px;
+        color: #6DB1B7;
+    }
+
+    td, th {
+        padding: 3px;
+        text-align: center;
+        border: solid 2px #E9F9FA;
+        border-collapse: collapse;
+    }
+
+    .table-week {
+        width: 104.33px;
+        color: #000;
+        font-size: 18px;
+    }
+}
+
+
+/*********************** タブレットサイズの場合のメディアクエリ********************** */
+@media (max-width: 860px) {
+   
+    #main-content, #feature, #policy, #info, #footer {
         width: 100%;
     }
 
+    /* 当院の特徴 */
+    .features {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 80px;
+    }
     
+    .features-photo {
+        width: 100%;
+        height: 100%;
+        width: 500px;
+        height: auto;
+    }
+    
+    .feature-item {
+        margin: 40px 20px;
+        text-align: center;
+    }
+    
+    .feature-item p {
+        text-align: center;
+    }
+
+    /* 治療のポリシー */
+    #policy {
+        align-items: center;
+        height: 800px;
+    }
+
+    #policy-access {
+        height: 700px;
+        align-items: center;
+    }
+
+    .access-img {
+        width: 423px;
+        height: 244px;        
+    } 
+    
+    .content {
+        margin-top: 110px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .policy-image {
+        width: 100%;
+        height: 100%;
+        max-width: 354px;
+        height: auto;
+        margin: 20px 0;
+    }
+    
+    .section-subtitle {
+        margin-bottom: 15px;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .policy-description p {
+        width: 400px; /* 幅を指定 */
+    }
+
+    .content.reverse {
+        flex-direction: column;
+    }
+
+    /*お知らせ*/
+    #info {
+        height: 700px;
+    }
+    .news {
+        margin: 0;
+        margin-top: 100px;
+    }
+    .news_list time {
+        background-color: #50D5E0;
+        color: #fff;
+        margin-right: 10px;
+        font-size: 1.1em;
+        padding: 0 5px;
+    }
+
+    .news_list {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .news_text {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .news_item {
+        font-size: 18px;
+    }
+
+    .news_content {
+        font-size: 14px;
+    }
+
+    .news-all {
+        text-align: right;
+        margin-top: 40px;
+    }
+
 }
