@@ -14,12 +14,12 @@
     <body>
         
         <header class="container flex">
-            <h1><a href="dental_clinic.html"><img class="logo" src="sozai/LOGO.svg" alt="五反田歯科"></a></h1>
+            <h1><a href="dental_clinic.html"><img class="logo" src="LOGO.svg" alt="五反田歯科"></a></h1>
             <nav>
                 <ul class="main-nav flex pc-only">
-                    <li><a href="#">診療案内</a></li>
-                    <li><a href="#">アクセス・診療時間</a></li>
-                    <li><a class="button" href="#">WEB予約はこちら</a></li>
+                    <li><a href="medicalinfo.html">診療案内</a></li>
+                    <li><a href="access.html">アクセス・診療時間</a></li>
+                    <li><a class="button" href="booking.html">WEB予約はこちら</a></li>
                 </ul>
             </nav>
             <!-- ハンバーガーメニュー -->
@@ -30,73 +30,79 @@
             </div>
         </header>
 
-        <section id="web-reserve" class="container">
-            <img src="sozai/mainvisual4.jpg" class="web-reserve-img" alt="WEB予約イメージ写真">
+        <section id="info-main-visual" class="container">
+            <img src="mainvisual2.jpg" class="info-main-img" alt="診療案内イメージ写真">
             <div class="info-title">
-                <h1 class="subpage-title">WEB予約</h1>
-                <p class="subpage-subtitle">Online reservation</p>
+                <h1 class="subpage-title">診療案内</h1>
+                <p class="subpage-subtitle">Medical Information</p>
             </div>
         </section>
 
-        <section id="web-reserve-form" class="container">
+        <section id="info-main-contents" class="container">
             <div class="breadcrumbs">
-                <p><a href="#">HOME</a></p><p> > </p><p><a href="#">WEB予約</a></p>
+                <p><a href="index.html">HOME</a></p><p> > </p><p><a href="medicalinfo.html">診療案内</a></p>
             </div>
-            <h1 class="form-title">患者様情報を入力してください。</h1>
+            <div class="info-main-btn">
+                <p class="btn btn-info-contents">
+                    <a href="#">虫歯治療</a>
+                </p>
+                <p class="btn btn-info-contents">
+                    <a href="#">歯周病治療</a>
+                </p>
+            </div>
+        </section>
 
-            <form>
-  
-                <div class="item">
-                  <label class="label">お名前</label>
-                  <input class="inputs" type="text" name="name">
+        <section id="policy" class="container">
+            <h4 class="section-title">虫歯治療</h4>
+            <div class="content">
+                <img src="care1.jpg" alt="イメージ写真" class="policy-image">
+                <div class="policy-context">
+                    <h5 class="section-subtitle">患者さまの満足度を最優先し痛みを軽減した治療を心がけます</h5>
+                    <p>削る量や回数が多くなるほど歯は弱くなります。従いまして、治療を繰り返さないことが
+                        大切です。当院はなるべく抜かない、削らない治療を行っています。また、できるだけ痛みを軽減した治療を心がけています。</p>
                 </div>
-                
-                <div class="item">
-                  <label class="label">E-mail</label>
-                  <input class="inputs" type="email" name="email">
-                </div>
-              
-                <div class="item">
-                    <label class="label">TEL</label>
-                    <input class="inputs" type="tel" name="tel">
-                </div>
-                
-                <div class="item">
-                    <label class="label">ご予約日</label>
-                    <input class="inputs-date" type="date" name="date">
-                </div>
-                
-                <div class="item">
-                  <label class="label">ご要望•ご質問など</label>
-                  <textarea class="inputs-text-area"></textarea>
-                </div>
-              
-                <div class="btn-area">
-                  <input class="submit-btn" type="submit" value="入力内容を確認する">
-                </div>
-              
-            </form>
+            </div>
+        </section>
 
+        <section id="policy" class="container">
+            <h4 class="section-title">歯周病治療</h4>
+            <div class="content reverse">
+                <img src="care2.jpg" alt="イメージ写真" class="policy-image">
+                <div class="policy-context">
+                    <h5 class="section-subtitle">歯周病の治療と予防をしっかりと行い歯の寿命を延ばしましょう</h5>
+                    <p>歯周病を治療しないと、歯茎が炎症を起こし、歯を支える骨が破壊されます。
+                        これにより、歯が抜けるリスクが高まり、口臭や出血が常に気になる状態になります。
+                        歯周病は全身の健康にも悪影響を及ぼし、心臓病や糖尿病のリスクを高めることが知ら
+                        れています。早期治療がとても大切です。</p>
+                </div>
+            </div>
         </section>
 
         <section id="footer" class="container">
-            <img src="sozai/LOGO.svg" class="footer-logo">
+            <img src="LOGO.svg" class="footer-logo">
             <nav>
                 <ul class="footer-nav">
-                    <li><a href="#">トップページ</a></li>
-                    <li><a href="#">診療案内</a></li>
-                    <li><a href="#">アクセス・診療時間</a></li>
-                    <li><a href="#">WEB予約</a></li>
+                    <li><a href="index.html">トップページ</a></li>
+                    <li><a href="medicalinfo.html">診療案内</a></li>
+                    <li><a href="access.html">アクセス・診療時間</a></li>
+                    <li><a href="booking.html">WEB予約</a></li>
                 </ul>
             </nav>
             <div class="sns-icon">
                 <ul>
-                    <li><a href="#"><img src="sozai/sns_facebook.svg"></a></li>
-                    <li><a href="#"><img src="sozai/sns_X.svg"></a></li>
-                    <li><a href="#"><img src="sozai/sns_instagram.svg"></a></li>
+                    <li><a href="#"><img src="sns_facebook.svg"></a></li>
+                    <li><a href="#"><img src="sns_X.svg"></a></li>
+                    <li><a href="#"><img src="sns_instagram.svg"></a></li>
                 </ul>
             </div>    
         </section>
+
+
+
+        
+
+
+            
 
     </body>
    
