@@ -6,9 +6,6 @@
         <meta name="description" content="地域に愛される歯科医院">
         <link rel="stylesheet" href="stylesheet.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-
     </head>
 
     <body>
@@ -16,112 +13,136 @@
         <header class="container flex">
             <h1><a href="index.html"><img class="logo" src="LOGO.svg" alt="五反田歯科"></a></h1>
             <nav>
-                <ul class="main-nav flex">
+                <ul class="main-nav flex pc-only">
                     <li><a href="medicalinfo.html">診療案内</a></li>
                     <li><a href="access.html">アクセス・診療時間</a></li>
                     <li><a class="button" href="booking.html">WEB予約はこちら</a></li>
                 </ul>
             </nav>
+            <!-- ハンバーガーメニュー -->
+            <div class="menu-toggle sp-only"> 
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            
+            <nav class="sp-nav sp-only">
+                <ul>
+                    <li><a href="medicalinfo.html">診療案内</a></li>
+                    <li><a href="access.html">アクセス・診療時間</a></li>
+                    <li><a href="booking.html">WEB予約はこちら</a></li>
+                </ul>
+            </nav>
+
         </header>
 
-            <section id="main-content" class="container">
-                <img src="mainvisual.jpg" alt="イメージ写真" class="main-image">
-                <div class="main-copy">
-                    <h2 class="copy-title"><span style="color: #50D5E0;">地域に愛される</span>歯科医院へ<br>
-                    <span style="color: #EDB0BF;">健康な歯</span>で笑顔の毎日を</h2>
-                </div>
-            </section>
+        <section id="main-content" class="container">
+            <img src="mainvisual.jpg" alt="イメージ写真" class="main-image">
+            <h2 class="copy-title"><span style="color: #50D5E0;">地域に愛される</span>歯科医院へ<br>
+            <span style="color: #EDB0BF;">健康な歯</span>で笑顔の毎日を</h2>
+        </section>
 
-            <section id="feature" class="container">
-                <h4 class="section-title">当院の特徴</h4>
-                <div class="features">
-                    <div class="feature-item">
-                        <img class="features-photo" src="Thumbnail1.jpg">
-                        <P>清潔な院内空間</P>
-                    </div>
-                    
-                    <div class="feature-item">
-                        <img class="features-photo" src="Thumbnail2.jpg">
-                        <P>経験豊富な歯科医師</P>
-                    </div>
+        <section id="feature" class="container">
+            <h4 class="section-title">当院の特徴</h4>
+            <div class="features">
+                <div class="feature-item">
+                    <img class="features-photo" src="Thumbnail1.jpg">
+                    <P>清潔な院内空間</P>
+                </div>
                 
-                    <div class="feature-item">
-                        <img class="features-photo" src="Thumbnail3.jpg">
-                        <P>駅チカで通いやすい</P>
-                    </div>
+                <div class="feature-item">
+                    <img class="features-photo" src="Thumbnail2.jpg">
+                    <P>経験豊富な歯科医師</P>
                 </div>
-            </section>
-
-
-            <section id="policy" class="container">
-                <h4 class="section-title">治療のポリシー</h4>
-                <div class="content">
-                    <img src="policy.jpg" alt="イメージ写真" class="policy-image">
-                    <div class="policy-context">
-                        <h5 class="section-subtitle">ひとりひとりに寄り添った<br>最善の治療を目指しています</h5>
-                        <p>治療や費用について、不安を抱える患者様も多いことと思います。<br>
-                        日々、患者様から信頼を得られるよう努めております。<br>
-                        ご心配なことがございましたら、お気軽にご相談ください。<br>
-                        患者様ひとりひとりに寄り添った、誠実な治療をめざしております。</p>
-                    </div>
-                </div>
-            </section>
-
-            <!--お知らせ記事一覧-->
-            <section id="info" class="container">
-                <h4 class="section-title">お知らせ</h4>
-                <div class="news">
-                    <div class="news_list">
-                        <time>2025/04/18</time>
-                        <div class="news_text">
-                            <p class="news_item">5月の休診日のお知らせ</p>
-                            <p class="news_content">5月の休診日のお知らせ抜粋5月の休診日のお知らせ抜粋5月の休診日のお知らせ抜粋5月の休診日のお知らせ…</p>
-                        </div>
-                    </div>
-                    <div class="news_list">
-                        <time>2025/04/18</time>
-                        <div class="news_text">
-                            <p class="news_item">5月の休診日のお知らせ</p>
-                            <p class="news_content">5月の休診日のお知らせ抜粋5月の休診日のお知らせ抜粋5月の休診日のお知らせ抜粋5月の休診日のお知らせ…</p>
-                        </div>
-                    </div>
-                    <div class="news_list">
-                        <time>2025/04/18</time>
-                        <div class="news_text">
-                            <p class="news_item">5月の休診日のお知らせ</p>
-                            <p class="news_content">5月の休診日のお知らせ抜粋5月の休診日のお知らせ抜粋5月の休診日のお知らせ抜粋5月の休診日のお知らせ…</p>
-                        </div>
-                    </div>
-                    <p class="news-all">＞<a href="#">お知らせ一覧へ</a></p>
-    
-                </div>
-            </section>
             
-            <section id="footer" class="container">
-                <img src="LOGO.svg" class="footer-logo">
-                <nav>
-                    <ul class="footer-nav">
-                        <li><a href="index.html">トップページ</a></li>
-                        <li><a href="medicalinfo.html">診療案内</a></li>
-                        <li><a href="access.html">アクセス・診療時間</a></li>
-                        <li><a href="booking.html">WEB予約</a></li>
-                    </ul>
-                </nav>
-                <div class="sns-icon">
-                    <ul>
-                        <li><a href="#"><img src="sns_facebook.svg"></a></li>
-                        <li><a href="#"><img src="sns_X.svg"></a></li>
-                        <li><a href="#"><img src="sns_instagram.svg"></a></li>
-                    </ul>
-                </div>    
-            </section>
+                <div class="feature-item">
+                    <img class="features-photo" src="Thumbnail3.jpg">
+                    <P>駅チカで通いやすい</P>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="policy" class="container bg-blue">
+            <h4 class="section-title">治療のポリシー</h4>
+            <div class="content">
+                <img src="policy.jpg" alt="イメージ写真" class="policy-image">
+                <div class="policy-context">
+                    <h5 class="section-subtitle">ひとりひとりに寄り添った<br>最善の治療を目指しています</h5>
+                    <p>治療や費用について、不安を抱える患者様も多いことと思います。
+                        日々、患者様から信頼を得られるよう努めております。
+                        ご心配なことがございましたら、お気軽にご相談ください。
+                        患者様ひとりひとりに寄り添った、誠実な治療をめざしております。</p>
+                </div>
+            </div>
+        </section>
+
+        <!--お知らせ記事一覧-->
+        <section id="info" class="container">
+            <h4 class="section-title">お知らせ</h4>
+            <div class="news">
+                <div class="news_list">
+                    <time>2025/04/18</time>
+                    <div class="news_text">
+                        <p class="news_item">5月の休診日のお知らせ</p>
+                        <p class="news_content">5月の休診日のお知らせ抜粋5月の休診日のお知らせ抜粋5月の休診日のお知らせ抜粋5月の休診日のお知らせ…</p>
+                    </div>
+                </div>
+                <div class="news_list">
+                    <time>2025/04/18</time>
+                    <div class="news_text">
+                        <p class="news_item">5月の休診日のお知らせ</p>
+                        <p class="news_content">5月の休診日のお知らせ抜粋5月の休診日のお知らせ抜粋5月の休診日のお知らせ抜粋5月の休診日のお知らせ…</p>
+                    </div>
+                </div>
+                <div class="news_list">
+                    <time>2025/04/18</time>
+                    <div class="news_text">
+                        <p class="news_item">5月の休診日のお知らせ</p>
+                        <p class="news_content">5月の休診日のお知らせ抜粋5月の休診日のお知らせ抜粋5月の休診日のお知らせ抜粋5月の休診日のお知らせ…</p>
+                    </div>
+                </div>
+                <p class="news-all">＞<a href="#">お知らせ一覧へ</a></p>
+
+            </div>
+        </section>
+        
+        <section id="footer" class="container">
+            <img src="LOGO.svg" class="footer-logo">
+            <nav>
+                <ul class="footer-nav">
+                    <li><a href="index.html">トップページ</a></li>
+                    <li><a href="medicalinfo.html">診療案内</a></li>
+                    <li><a href="access.html">アクセス・診療時間</a></li>
+                    <li><a href="booking.html">WEB予約</a></li>
+                </ul>
+            </nav>
+            <div class="sns-icon">
+                <ul>
+                    <li><a href="#"><img src="sns_facebook.svg"></a></li>
+                    <li><a href="#"><img src="sns_X.svg"></a></li>
+                    <li><a href="#"><img src="sns_instagram.svg"></a></li>
+                </ul>
+            </div>    
+        </section>
+
+
+        <footer>
+            <p class="footer-copywrite">Copyright © 2024 gotanda dental clinic. All Rights Reserved.</p>
+        </footer>
+
+
+
+
+
+        <script src="dental-hp.js"></script>
 
 
 
 
     </body>
+
+
    
-    <footer>
-        <p class="footer-copywrite">Copyright © 2024 gotanda dental clinic. All Rights Reserved.</p>
-    </footer>
+
 </html>
